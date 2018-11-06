@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+/* .hidden {
+  opacity: 0;
+}
+
+@keyframes opacity {
+  from {opacity: 0};
+  to {opacity: 1};
+}
+
+.show {
+  animation: opacity 600s;
+} */
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+header {
+  background-image: url(paper-header2-1.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+li {
+  display: inline;
+  padding-right: 10px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  border: 8px solid #8C5C47;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 40px;
+  color: #8C5C47;
+}
+
+content {
+  margin-top: 300px;
+}
+#about {
+  height: 600px;
+  background-color: #D3C7C0;
+
+}
+
+.about-us {
+  display: inline-block;
+  width: 45%;
+  background-color: inherit;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  animation: slideLeft 3s;
+
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+h2 {
+
+}
+
+#product {
+  height: 600px;
+  background-color: #F0F0F3;
+}
+
+#team {
+  height: 600px;
+  background-color: #8C5C47;
+}
