@@ -4,18 +4,10 @@
 
 }
 
-/* .hidden {
+ .hidden {
   opacity: 0;
 }
 
-@keyframes opacity {
-  from {opacity: 0};
-  to {opacity: 1};
-}
-
-.show {
-  animation: opacity 600s;
-} */
 
 body {
   margin: 0;
@@ -59,6 +51,7 @@ h1 {
 content {
   margin-top: 300px;
 }
+
 #about {
   height: 600px;
   background-color: #D3C7C0;
@@ -68,33 +61,57 @@ content {
 .about-us {
   display: inline-block;
   width: 45%;
+  font-size: 20px;
+  line-height: 30px;
   background-color: inherit;
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  animation: slideLeft 3s;
+  padding: 5px;
 
+}
+
+.slideLeft {
+animation-name: slideLeft;
+animation-duration: 2s;
+visibility: visible;
 }
 
 @keyframes slideLeft {
   from {
     transform: translate3d(-100%, 0, 0);
-    visibility: visible;
+    visibility: hidden;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
-h2 {
+.slideRight {
+animation-name: slideRight;
+animation-duration: 2s;
+visibility: visible;
+}
 
+@keyframes slideRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
 }
 
 #product {
   height: 600px;
   background-color: #F0F0F3;
 }
+
 
 #team {
   height: 600px;
